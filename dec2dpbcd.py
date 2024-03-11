@@ -29,7 +29,7 @@ def append_zeros(s):
         return s
     else:
         zeros_to_add = 1 if remainder == 2 else 2
-        return "0" * zeros_to_add + s
+        return s.zfill(s_len + zeros_to_add)
 
 
 def group_decimals(s):
